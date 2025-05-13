@@ -9,6 +9,7 @@ public class AktivtVapen extends Föremål{
         if (använt){
             if (rundTimer <= runda){
                 motHp = motHp - skada;
+                rundTimer=runda+rundTimer;
             }
             else {
                 System.out.println("Föremålet kan inte användas än!");

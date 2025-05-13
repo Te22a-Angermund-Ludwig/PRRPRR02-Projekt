@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Varelser {
     public String namn;
-    public Integer MaxHp;
-    public Integer Hp;
-    public Integer Styrka;
-    public Integer Hastighet;
+    public Integer maxHp;
+    public Integer hp;
+    public Integer styrka;
+    public Integer hastighet;
     public ArrayList<Void> Attacklista;
 }
