@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public class Föremål {
+    public String Namn;
 }

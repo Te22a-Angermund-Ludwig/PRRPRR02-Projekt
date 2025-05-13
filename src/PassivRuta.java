@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public class PassivRuta {
+    public void GenereraRuta(){
+
+    }
 }

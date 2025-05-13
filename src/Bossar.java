@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class Bossar {
+public class Bossar extends Monster{
+    public Integer Rustning;
 }

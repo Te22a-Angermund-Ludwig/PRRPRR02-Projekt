@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public class Monster extends Varelser{
+    public void Attack(){
 
-public class Monster {
+    }
 }

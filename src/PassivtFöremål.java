@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class PassivtFöremål {
+public class PassivtFöremål extends Föremål{
+    public Integer HpÖkning;
+    public Integer styrkeÖkning;
+    public Integer HastighetsÖkning;
 }
