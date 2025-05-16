@@ -4,6 +4,7 @@ public class Monster extends Varelser{
     public Random rnd = new Random();
     public int val;
     public double buff = 1.5;
+    public int pris;
 
     public double Attack(double motHp, double styrka){
         motHp=motHp-styrka;

@@ -1,7 +1,7 @@
 public class HelandeRuta extends PassivRuta{
-    public Integer helande;
+    public double helande;
 
-    public Integer Hela(Integer Hp){
+    public double Hela(double Hp){
         helande = Hp/3;
         Hp = Hp + helande;
         return Hp;
