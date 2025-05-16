@@ -2,20 +2,20 @@ import java.util.Random;
 
 public class Monster extends Varelser{
     public Random rnd = new Random();
-    public Integer val;
-    public Integer buff = 3/2;
+    public int val;
+    public double buff = 1.5;
 
-    public Integer Attack(Integer motHp, Integer styrka){
+    public double Attack(double motHp, double styrka){
         motHp=motHp-styrka;
         return motHp;
     }
 
-    public Integer Buff(Integer styrka){
+    public double Buff(double styrka){
         styrka= styrka*buff;
         return styrka;
     }
 
-    public Integer Motståndare(Integer hp, Integer styrka, Integer maxHp, Integer motHp){
+    public double Motståndare(double hp, double styrka, double maxHp, double motHp){
         if (hp >= maxHp){
             val = rnd.nextInt(0,3);
             if (val==1){
@@ -32,8 +32,10 @@ public class Monster extends Varelser{
             else {
                 return Attack(motHp,styrka);
             }
-        }
-        else {
+        } else if (motHp>=styrka) {
+            return Attack(motHp,styrka);
+
+        } else {
             return Attack(motHp,styrka);
         }
     }

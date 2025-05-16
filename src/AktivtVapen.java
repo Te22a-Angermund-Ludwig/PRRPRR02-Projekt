@@ -1,10 +1,10 @@
 public class AktivtVapen extends Föremål{
-    public Integer rundTimer;
-    public Integer skada;
+    public int rundTimer;
+    public int skada;
     public boolean använt;
-    public Integer cd;
+    public int cd;
 
-    public Integer Använd(Integer motHp, Integer runda){
+    public int Använd(int motHp, int runda){
         cd = runda - rundTimer;
         if (använt){
             if (rundTimer <= runda){

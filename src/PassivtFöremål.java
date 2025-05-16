@@ -1,5 +1,5 @@
 public class PassivtFöremål extends Föremål{
-    public Integer HpÖkning;
-    public Integer styrkeÖkning;
-    public Integer HastighetsÖkning;
+    public int HpÖkning;
+    public int styrkeÖkning;
+    public int HastighetsÖkning;
 }
