@@ -6,5 +6,4 @@ public class Varelser {
     public double hp;
     public double styrka;
     public int hastighet;
-    public ArrayList<Void> Attacklista;
 }

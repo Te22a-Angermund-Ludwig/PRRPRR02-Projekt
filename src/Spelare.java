@@ -6,7 +6,8 @@ public class Spelare {
     public ArrayList<AktivtVapen> Ryggsäck;
     public Scanner sc = new Scanner(System.in);
 
-    public double AnvändAttack(double styrka, double motHp){
+
+    public double användAttack(double styrka, double motHp){
         motHp=motHp-styrka;
         return motHp;
     }
@@ -50,7 +51,7 @@ public class Spelare {
         return;
     }
 
-    public void AnvändItem(double motHp, int runda){
+    public double AnvändItem(double motHp, int runda){
         for (int i = 0; i < Ryggsäck.size(); i++) {
             int num = i+1;
             System.out.println(num+". "+Ryggsäck.get(i));
@@ -92,6 +93,6 @@ public class Spelare {
                     System.out.println("försök igen!");
             }
 
-        return;
+        return motHp;
     }
 }
